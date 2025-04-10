@@ -1,4 +1,3 @@
-class VideosController < ApplicationController
-  def index
-  end
+def index
+  @videos = Video.includes(:artist).all
 end
